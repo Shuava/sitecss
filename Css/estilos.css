@@ -1,10 +1,48 @@
+/* soft reset page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-image: url("https://cdn.dicionariopopular.com/imagens/thor-gordo-fanart.jpg");   
-    background-size:  76vh;
+    background-color: whitesmoke;   
+    background-size: auto 130vh ;
     font-family: Arial; 
     height:  76vh;
+    font-size: 12px;
   }
+
+/* se a tela tiver pelo menor 400px carregará estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
   
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+header {
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .menu {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+
   .menu ul{
     display: flex;
     justify-content: space-around;
@@ -26,9 +64,20 @@ body {
   .site-subtitle,
   .site-title {
     text-align: center;
+    font-family: 'Righteous', cursive;
   }
   
   .site-subtitle {
     font-style: italic;
     text-decoration: underline; 
+  }
+
+section {
+ display: flex;
+ justify-content: space-around;
+}
+
+  .img-portfolio {
+    height: 180px;
+    width: 220px;
   }
